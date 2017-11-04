@@ -32,7 +32,7 @@ class TicTacToe
   end
 
 
-  def position_taken?(board, index)
+  def position_taken?(index)
     if board[index] == " "
       return false
     elsif board[index] == ""
@@ -44,7 +44,7 @@ class TicTacToe
     end
   end
 
-  def valid_move?(board, index)
+  def valid_move?(index)
     taken = position_taken?(board, index)
     if ((index >= 0) && (index <= 8)) && (taken == false)
       return true
