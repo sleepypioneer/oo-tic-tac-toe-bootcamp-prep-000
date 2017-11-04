@@ -140,7 +140,6 @@ class TicTacToe
     end
     if won? != false
       winner = winner
-      puts winner
       puts "Congratulations #{winner}!"
     elsif draw? == true
       puts "Cat's Game!"
